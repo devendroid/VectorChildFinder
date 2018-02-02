@@ -42,6 +42,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.annotation.RestrictTo;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.util.ArrayMap;
 import android.util.AttributeSet;
@@ -411,7 +412,6 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
      * @param theme the theme of this vector drawable, it can be null.
      * @return a new VectorDrawableCompat or null if parsing error is found.
      */
-    @SuppressLint("NewApi")
     @Nullable
     public static VectorDrawableCompat create(@NonNull Resources res, @DrawableRes int resId,
                                               @Nullable Resources.Theme theme) {
@@ -424,7 +424,7 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
 //        }
 
         try {
-            @SuppressLint("ResourceType") final XmlPullParser parser = res.getXml(resId);
+            final XmlPullParser parser = res.getXml(resId);
             final AttributeSet attrs = Xml.asAttributeSet(parser);
             int type;
             while ((type = parser.next()) != XmlPullParser.START_TAG &&

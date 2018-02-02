@@ -27,5 +27,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     compile project(':vectorchildfinder')
+    //compile 'com.github.devsideal:VectorChildFinder:1.0.0'
 
 }

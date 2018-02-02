@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VectorChildFinderDemo.iml" filepath="$PROJECT_DIR$/VectorChildFinderDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VectorChildFinder.iml" filepath="$PROJECT_DIR$/VectorChildFinder.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/vectorchildfinder/vectorchildfinder.iml" filepath="$PROJECT_DIR$/vectorchildfinder/vectorchildfinder.iml" />
     </modules>

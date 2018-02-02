@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_mouth:
                 if(m) {
                     m = false;
-                    mouthGroup.setTranslateX(10);
+                    mouthGroup.setTranslateX(-10);
                 }
                 else {
                     m = true;
