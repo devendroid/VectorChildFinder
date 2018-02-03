@@ -1,5 +1,6 @@
 # VectorChildFinder
-
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-VectorChildFinder-green.svg?style=flat )]( https://android-arsenal.com/details/1/6733 )
+[![GitHub license](https://img.shields.io/github/license/dcendents/android-maven-gradle-plugin.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 VectorChildFinder helps to find inner elements of vector drawable like path and group.
 ## Demo
