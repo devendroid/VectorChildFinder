@@ -31,7 +31,7 @@ VectorChildFinder helps to find inner elements of vector drawable like path and 
 VectorChildFinder vector = new VectorChildFinder(this, R.drawable.my_vector, imageView);
 
 VectorDrawableCompat.VFullPath path1 = vector.findPathByName("path1");
-path.setFillColor(Color.RED);
+path1.setFillColor(Color.RED);
 
 VectorDrawableCompat.VGroup group1 = vector.findGroupByName("group1");
 group1.setTranslateX(10);
