@@ -37,6 +37,8 @@ path1.setFillColor(Color.RED);
 VectorDrawableCompat.VGroup group1 = vector.findGroupByName("group1");
 group1.setTranslateX(10);
 
+imageView.invalidate();
+
 ```
 
 ## License
