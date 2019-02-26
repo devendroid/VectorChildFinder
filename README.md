@@ -42,6 +42,10 @@ imageView.invalidate();
 
 ```
 
+## Used by
+
+<img src="/assets/gym.png" /> | [gym][Gym Scheduler, Guide & Fitness Tips]
+
 ## License
 ```
 Copyright 2018 Deven Singh
@@ -58,3 +62,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+[gym]:  https://play.google.com/store/apps/details?id=com.devs.gym
