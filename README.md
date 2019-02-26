@@ -44,7 +44,7 @@ imageView.invalidate();
 
 ## Used by
 
-<img src="/assets/gym.png" /> | [gym][Gym Scheduler, Guide & Fitness Tips]
+<img src="/assets/gym.png" />  [gym][Gym Scheduler, Guide & Fitness Tips]
 
 ## License
 ```
