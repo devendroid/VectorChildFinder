@@ -45,6 +45,7 @@ imageView.invalidate();
 ## Used by
 
 <img src="/assets/gym.png" />  
+
 [GymScheduler][GymScheduler]
 
 ## License
