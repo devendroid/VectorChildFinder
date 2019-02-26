@@ -46,7 +46,7 @@ imageView.invalidate();
 
 <img src="/assets/gym.png" />  
 
-[GymScheduler][GymScheduler]
+[Gym Scheduler][Gym Scheduler]
 
 ## License
 ```
@@ -65,4 +65,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-[GymScheduler]:  https://play.google.com/store/apps/details?id=com.devs.gym
+[Gym Scheduler]:  https://play.google.com/store/apps/details?id=com.devs.gym
