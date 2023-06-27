@@ -771,7 +771,7 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
         @Override
         public Drawable newDrawable(Resources res) {
             VectorDrawableCompat drawableCompat = new VectorDrawableCompat();
-            drawableCompat.mDelegateDrawable = (VectorDrawable) mDelegateState.newDrawable(res);
+            drawableCompat.mDelegateDrawable =  mDelegateState.newDrawable(res);
             return drawableCompat;
         }
 
