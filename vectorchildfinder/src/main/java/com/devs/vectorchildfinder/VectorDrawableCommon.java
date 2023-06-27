@@ -10,8 +10,9 @@ import android.graphics.ColorFilter;
 import android.graphics.Rect;
 import android.graphics.Region;
 import android.graphics.drawable.Drawable;
-import androidx.core.graphics.drawable.DrawableCompat;
 import android.util.AttributeSet;
+
+import androidx.core.graphics.drawable.DrawableCompat;
 
 /**
  * Internal common delegation shared by VectorDrawableCompat and AnimatedVectorDrawableCompat
