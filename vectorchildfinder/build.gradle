@@ -3,15 +3,13 @@ apply plugin: 'maven-publish'
 group = 'com.github.devsideal'
 
 android {
-    compileSdkVersion 33
+    compileSdk 33
 
 
 
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 33
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         vectorDrawables.useSupportLibrary = true
@@ -23,6 +21,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.devs.vectorchildfinder'
 
 }
 
@@ -31,7 +30,7 @@ dependencies {
 
    // implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
