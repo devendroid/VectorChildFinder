@@ -18,6 +18,8 @@ package com.devs.vectorchildfinder;
  * the License.
  */
 
+import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+
 import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
@@ -37,18 +39,18 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.VectorDrawable;
 import android.os.Build;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.annotation.RestrictTo;
-import android.support.v4.content.res.ResourcesCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v4.util.ArrayMap;
 import android.util.AttributeSet;
 import android.util.LayoutDirection;
 import android.util.Log;
 import android.util.Xml;
+
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.RestrictTo;
+import androidx.collection.ArrayMap;
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -56,8 +58,6 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Stack;
-
-import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
 
 public class VectorDrawableCompat extends VectorDrawableCommon {
@@ -772,7 +772,7 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
         @Override
         public Drawable newDrawable(Resources res) {
             VectorDrawableCompat drawableCompat = new VectorDrawableCompat();
-            drawableCompat.mDelegateDrawable = (VectorDrawable) mDelegateState.newDrawable(res);
+            drawableCompat.mDelegateDrawable =  mDelegateState.newDrawable(res);
             return drawableCompat;
         }
 

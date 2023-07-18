@@ -7,18 +7,17 @@ package com.devs.vectorchildfinder;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.ColorFilter;
-import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.graphics.Region;
 import android.graphics.drawable.Drawable;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v4.graphics.drawable.TintAwareDrawable;
 import android.util.AttributeSet;
+
+import androidx.core.graphics.drawable.DrawableCompat;
 
 /**
  * Internal common delegation shared by VectorDrawableCompat and AnimatedVectorDrawableCompat
  */
-abstract class VectorDrawableCommon extends Drawable implements TintAwareDrawable {
+abstract class VectorDrawableCommon extends Drawable {
     /**
      * Obtains styled attributes from the theme, if available, or unstyled
      * resources if the theme is null.
@@ -37,12 +36,10 @@ abstract class VectorDrawableCommon extends Drawable implements TintAwareDrawabl
     Drawable mDelegateDrawable;
 
     @Override
-    public void setColorFilter(int color, PorterDuff.Mode mode) {
+    public void setColorFilter(ColorFilter colorFilter) {
         if (mDelegateDrawable != null) {
-            mDelegateDrawable.setColorFilter(color, mode);
-            return;
+            mDelegateDrawable.setColorFilter(colorFilter);
         }
-        super.setColorFilter(color, mode);
     }
 
     @Override
@@ -76,14 +73,12 @@ abstract class VectorDrawableCommon extends Drawable implements TintAwareDrawabl
         if (mDelegateDrawable != null) {
             DrawableCompat.setHotspot(mDelegateDrawable, x, y);
         }
-        return;
     }
 
     @Override
     public void setHotspotBounds(int left, int top, int right, int bottom) {
         if (mDelegateDrawable != null) {
             DrawableCompat.setHotspotBounds(mDelegateDrawable, left, top, right, bottom);
-            return;
         }
     }
 
@@ -91,15 +86,13 @@ abstract class VectorDrawableCommon extends Drawable implements TintAwareDrawabl
     public void setFilterBitmap(boolean filter) {
         if (mDelegateDrawable != null) {
             mDelegateDrawable.setFilterBitmap(filter);
-            return;
         }
     }
 
     @Override
     public void jumpToCurrentState() {
         if (mDelegateDrawable != null) {
-            DrawableCompat.jumpToCurrentState(mDelegateDrawable);
-            return;
+            mDelegateDrawable.jumpToCurrentState();
         }
     }
 
@@ -108,7 +101,6 @@ abstract class VectorDrawableCommon extends Drawable implements TintAwareDrawabl
         // API >= 21 only.
         if (mDelegateDrawable != null) {
             DrawableCompat.applyTheme(mDelegateDrawable, t);
-            return;
         }
     }
 
