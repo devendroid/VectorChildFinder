@@ -36,6 +36,7 @@ import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.graphics.Rect;
+import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.VectorDrawable;
 import android.os.Build;
@@ -57,6 +58,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 
@@ -1087,7 +1089,7 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
                 }
                 mRenderPath.addPath(path, mFinalPathMatrix);
 
-                if (fullPath.mFillColor != Color.TRANSPARENT) {
+                if (fullPath.mFillColor != Color.TRANSPARENT || fullPath.mShader != null) {
                     if (mFillPaint == null) {
                         mFillPaint = new Paint();
                         mFillPaint.setStyle(Paint.Style.FILL);
@@ -1095,8 +1097,14 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
                     }
 
                     final Paint fillPaint = mFillPaint;
-                    fillPaint.setColor(applyAlpha(fullPath.mFillColor, fullPath.mFillAlpha));
-                    fillPaint.setColorFilter(filter);
+
+                    if (fullPath.mShader != null) {
+                        fillPaint.setShader(fullPath.mShader);
+                    } else {
+                        fillPaint.setColor(applyAlpha(fullPath.mFillColor, fullPath.mFillAlpha));
+                        fillPaint.setColorFilter(filter);
+                        fillPaint.setShader(null);
+                    }
                     canvas.drawPath(mRenderPath, fillPaint);
                 }
 
@@ -1229,6 +1237,10 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
 
         public String getGroupName() {
             return mGroupName;
+        }
+
+        public List<Object> getChildren() {
+            return mChildren;
         }
 
         public Matrix getLocalMatrix() {
@@ -1519,6 +1531,7 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
         float mStrokeWidth = 0;
 
         int mFillColor = Color.TRANSPARENT;
+        Shader mShader;
         float mStrokeAlpha = 1.0f;
         int mFillRule;
         float mFillAlpha = 1.0f;
@@ -1698,7 +1711,16 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
 
         @SuppressWarnings("unused")
         public void setFillColor(int fillColor) {
+            mShader = null;
             mFillColor = fillColor;
+        }
+
+        public Shader getShader() {
+            return mShader;
+        }
+
+        public void setShader(Shader shader) {
+            this.mShader = shader;
         }
 
         @SuppressWarnings("unused")
