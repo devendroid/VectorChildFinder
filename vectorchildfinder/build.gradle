@@ -26,10 +26,11 @@ android {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            from components.release
             groupId = 'com.github.tinder-chakchisio'
             artifactId = 'VectorChildFinder'
             version = '1.0.2-SHAPSHOT'
+
+            from components.java
         }
     }
 }
