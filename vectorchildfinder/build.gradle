@@ -30,7 +30,7 @@ publishing {
             artifactId = 'VectorChildFinder'
             version = '1.0.2-SHAPSHOT'
 
-            from components.java
+            from components.release
         }
     }
 }
