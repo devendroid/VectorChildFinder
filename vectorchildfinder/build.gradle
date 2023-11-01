@@ -1,12 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 group = 'com.github.devsideal'
-version = '1.0.2-SNAPSHOT'
 
 android {
     compileSdk 33
-
-
 
     defaultConfig {
         minSdkVersion 16
@@ -24,6 +21,17 @@ android {
     }
     namespace 'com.devs.vectorchildfinder'
 
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.release
+            groupId = 'com.github.tinder-chakchisio'
+            artifactId = 'VectorChildFinder'
+            version = '1.0.2-SHAPSHOT'
+        }
+    }
 }
 
 dependencies {
