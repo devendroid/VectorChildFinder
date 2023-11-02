@@ -11,8 +11,6 @@ import android.util.TypedValue
 import android.util.Xml
 import androidx.core.R
 import com.devs.vectorchildfinder.GradientColorCompat.GradientType.Linear
-import com.devs.vectorchildfinder.GradientColorCompat.GradientType.Radial
-import com.devs.vectorchildfinder.GradientColorCompat.GradientType.Sweep
 import java.io.IOException
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
@@ -26,8 +24,6 @@ class GradientColorCompat {
 
     sealed class GradientType {
         object Linear : GradientType()
-        object Radial : GradientType()
-        object Sweep : GradientType()
     }
 
     private val colors = mutableListOf<GradientItem>()
@@ -47,8 +43,6 @@ class GradientColorCompat {
                     /* tile = */ Shader.TileMode.CLAMP
                 )
             }
-            Radial -> TODO()
-            Sweep -> TODO()
         }
     }
 
@@ -62,8 +56,6 @@ class GradientColorCompat {
             val type = a.getInt(R.styleable.GradientColor_android_type, 0)
             gradientType = when (type) {
                 0 -> Linear
-                1 -> Radial
-                2 -> Sweep
                 else -> Linear
             }
             inflateInternal(parser, attrs, theme)
