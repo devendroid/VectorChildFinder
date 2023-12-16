@@ -1,0 +1,70 @@
+
+|
+java:S2293Ø"YReplace the type specification in this constructor call with the diamond operator ("<>").(é‚ñâÿÿÿÿÿ8´ìÑæ1
+w
+java:S2293Ä"YReplace the type specification in this constructor call with the diamond operator ("<>").(Øù’Ü8¶ìÑæ1
+|
+java:S2293’	"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÕÅÉûÿÿÿÿ8¶ìÑæ1
+:
+java:S1643"Use a StringBuilder instead.(‹¸áõ8ÁìÑæ1
+:
+java:S1643÷
+"Use a StringBuilder instead.(‹¸áõ8ÂìÑæ1
+?
+java:S1643…"Use a StringBuilder instead.(¯«§Œûÿÿÿÿ8ÂìÑæ1
+?
+java:S1643ˆ"Use a StringBuilder instead.(çêâ²şÿÿÿÿ8ÂìÑæ1
+m
+java:S2259‡"JA "NullPointerException" could be thrown; "mVectorState" is nullable here.(àº÷Óûÿÿÿÿ8’øÑæ1
+s
+java:S1149Ø"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(é‚ñâÿÿÿÿÿ8°øÑæ1
+|
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ÔÛ³%8°øÑæ1
+T
+java:S1874¥"1Remove this use of "getMatrix"; it is deprecated.(º’ÔÑúÿÿÿÿ8ÚøÑæ1
+^	java:S125È"<This block of commented-out lines of code should be removed.(×öçšşÿÿÿÿ8ŞøÑæ1
+N
+java:S1172ı"1Remove this unused method parameter "tintFilter".(İÏ§?8ìøÑæ1
+P
+java:S1874Í"2Remove this use of "getOpacity"; it is deprecated.(ß·Ãƒ8æùÑæ1
+c
+java:S2147¸"ECombine this catch with the one at line 438, which has the same body.(ï­£Ä8öùÑæ1
+^	java:S125¢"<This block of commented-out lines of code should be removed.(ÿíÂãûÿÿÿÿ8öùÑæ1
+^	java:S125™"<This block of commented-out lines of code should be removed.(õ¦±¥ùÿÿÿÿ8‰úÑæ1
+u
+java:S3776Ğ"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ûÄş×øÿÿÿÿ8¥úÑæ1
+O
+java:S1905ÿ"1Remove this unnecessary cast to "VectorDrawable".(ò©³¸8ÔúÑæ1
+O
+java:S1905"1Remove this unnecessary cast to "VectorDrawable".(÷«°Æ8×úÑæ1
+d
+java:S1126ñ"AReplace this if-then-else statement by a single return statement.(¡ÓßÛşÿÿÿÿ8“ûÑæ1
+_
+java:S1126ù"AReplace this if-then-else statement by a single return statement.(ÏËÍÁ8•ûÑæ1
+Y	java:S125ó"<This block of commented-out lines of code should be removed.(û–œó8·ûÑæ1
+u
+java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ñ„ıïıÿÿÿÿ8»ûÑæ1
+Y	java:S125ñ"<This block of commented-out lines of code should be removed.(â®ëœ8ÕûÑæ1
+X	java:S125ß	"<This block of commented-out lines of code should be removed.(ñ«¹-8æûÑæ1
+^	java:S125â	"<This block of commented-out lines of code should be removed.(¼Úøÿÿÿÿ8çûÑæ1
+U
+java:S1135â	"2Complete the task associated to this TODO comment.(¼Úøÿÿÿÿ8èûÑæ1
+Ÿ
+java:S1186£"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(óá¿¤8‘üÑæ1
+p	java:S100‚"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÕ· ıÿÿÿÿ8”üÑæ1
+P
+java:S1135È"2Complete the task associated to this TODO comment.(°³³Ï8üÑæ1
+^	java:S125Õ"<This block of commented-out lines of code should be removed.(‚•‹”ùÿÿÿÿ8¡üÑæ1
+X	java:S125À"<This block of commented-out lines of code should be removed.(ñ«¹-8¯üÑæ1
+^	java:S125Ã"<This block of commented-out lines of code should be removed.(¼Úøÿÿÿÿ8¯üÑæ1
+U
+java:S1135Ã"2Complete the task associated to this TODO comment.(¼Úøÿÿÿÿ8°üÑæ1
+9
+java:S3626ù"Remove this redundant jump.(ûÁİ…8¶üÑæ1
+^	java:S125ş"<This block of commented-out lines of code should be removed.(¢³åüÿÿÿÿ8·üÑæ1
+U
+java:S1135ı"2Complete the task associated to this TODO comment.(ŸËàÒıÿÿÿÿ8·üÑæ1
+R
+java:S1068G"0Remove this unused "SHAPE_VECTOR" private field.(â¨˜Ğøÿÿÿÿ8ÕüÑæ1
+]
+java:S1068d"@Remove this unused "mCachedConstantStateDelegate" private field.(ú¼Áë8ÕüÑæ1

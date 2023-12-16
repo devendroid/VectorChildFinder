@@ -1,10 +1,20 @@
 package com.devs.vectorchildfinderdemo;
 
+import static android.graphics.drawable.Drawable.createFromPath;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.PathParser;
 
 import com.devs.vectorchildfinder.VectorChildFinder;
 import com.devs.vectorchildfinder.VectorDrawableCompat;
@@ -30,6 +40,29 @@ public class MainActivity extends AppCompatActivity {
         dressPath = vector.findPathByName("dress_path");
         mouthGroup = vector.findGroupByName("mouth_group");
         eyesGroup = vector.findGroupByName("eyes_group");
+
+
+
+        for (int i=0; i < dressPath.getPathData().length; i++){
+            String path =dressPath.getPathData()[i].toString();
+            Log.d("savedInstanceState", ""+path);
+
+        }
+
+
+        image.setOnTouchListener((v, event) -> {
+            switch (event.getAction()){
+                case MotionEvent.ACTION_UP:
+                    // TODO
+                    Toast.makeText(MainActivity.this,
+                            mouthGroup.getScaleX() +"__"+
+                                    mouthGroup.getLocalMatrix(),
+                            Toast.LENGTH_SHORT).show();
+                    break;
+            }
+            return true;
+        });
+
     }
 
     boolean e = true, m = true;

@@ -1,0 +1,24 @@
+
+`	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(§Ëªıÿÿÿÿ
+\	java:S112ß"FDefine and throw a dedicated exception instead of using a generic one.( ‡ïà
+t
+java:S2293M"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÈŒşúÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(û¡Ú“
+<
+java:S1168H"&Return an empty array instead of null.(¥¹ï
+<
+java:S1168e"&Return an empty array instead of null.(¥¹ï
+p
+java:S3012‘"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(§ÅÍÄ
+}
+java:S2178¾"fCorrect this "|" to "||" and extract the right operand to a variable if it should always be evaluated.(İ Ë¹
+=	java:S131ö""Add a default case to this switch.(ÎÖÑ¡üÿÿÿÿ
+X	java:S107É"=Method has 10 parameters, which is greater than 7 authorized.(Í¥¯‚şÿÿÿÿ
+S	java:S107¤"=Method has 10 parameters, which is greater than 7 authorized.(­©êÂ
+i
+java:S3776Í"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(Ä¬€¤
+=	java:S131Ú""Add a default case to this switch.(Ï—íàıÿÿÿÿ
+=	java:S131†""Add a default case to this switch.(Ï—íàıÿÿÿÿ
+Ş
+java:S6541Í"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 232 to 64, Complexity from 58 to 14, Nesting Level from 3 to 2, Number of Variables from 15 to 6.(Ä¬€¤
