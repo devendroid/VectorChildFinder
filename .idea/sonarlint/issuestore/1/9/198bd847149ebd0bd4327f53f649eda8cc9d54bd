@@ -1,0 +1,12 @@
+
+m
+java:S13016"KReplace this "switch" statement by "if" statements to increase readability.(ãÁğ™øÿÿÿÿ8Ö˜ì1
+I
+java:S1659"'Declare "eyesGroup" on a separate line.(ˆ”¯úÿÿÿÿ8¶Ö˜ì1
+<
+java:S1659D"Declare "m" on a separate line.( ‡İæ8¶Ö˜ì1
+]	java:S125"<This block of commented-out lines of code should be removed.(šˆ°›şÿÿÿÿ8¸Ö˜ì1
+C	java:S1316""Add a default case to this switch.(ãÁğ™øÿÿÿÿ8¼Ö˜ì1
+O
+java:S11358"2Complete the task associated to this TODO comment.(…ïœ†8½Ö˜ì1
+>	java:S131F""Add a default case to this switch.(ºÖ8¾Ö˜ì1

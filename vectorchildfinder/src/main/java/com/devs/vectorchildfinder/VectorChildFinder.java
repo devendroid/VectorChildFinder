@@ -34,6 +34,7 @@ public class VectorChildFinder {
         return (VectorDrawableCompat.VFullPath) vectorDrawable.getTargetByName(pathName);
     }
 
+
     /**
      * @param groupName Group name that you gave in vector drawable file
      * @return A Object type of VectorDrawableCompat.VGroup

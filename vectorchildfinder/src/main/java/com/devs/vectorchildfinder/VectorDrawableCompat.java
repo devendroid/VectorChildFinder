@@ -1403,6 +1403,10 @@ public class VectorDrawableCompat extends VectorDrawableCommon {
 
         }
 
+        public String getPathAsString(){
+            return NodesToString(mNodes);
+        }
+
         public String NodesToString(PathParser.PathDataNode[] nodes) {
             String result = " ";
             for (int i = 0; i < nodes.length; i++) {

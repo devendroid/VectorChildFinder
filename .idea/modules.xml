@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VectorChildFinder.iml" filepath="$PROJECT_DIR$/VectorChildFinder.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vectorchildfinder/vectorchildfinder.iml" filepath="$PROJECT_DIR$/vectorchildfinder/vectorchildfinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VectorChildFinder.iml" filepath="$PROJECT_DIR$/.idea/modules/VectorChildFinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VectorChildFinder.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VectorChildFinder.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VectorChildFinder.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VectorChildFinder.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VectorChildFinder.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VectorChildFinder.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VectorChildFinder.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VectorChildFinder.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vectorchildfinder/VectorChildFinder.vectorchildfinder.iml" filepath="$PROJECT_DIR$/.idea/modules/vectorchildfinder/VectorChildFinder.vectorchildfinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vectorchildfinder/VectorChildFinder.vectorchildfinder.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/vectorchildfinder/VectorChildFinder.vectorchildfinder.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vectorchildfinder/VectorChildFinder.vectorchildfinder.main.iml" filepath="$PROJECT_DIR$/.idea/modules/vectorchildfinder/VectorChildFinder.vectorchildfinder.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vectorchildfinder/VectorChildFinder.vectorchildfinder.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/vectorchildfinder/VectorChildFinder.vectorchildfinder.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vectorchildfinder/com.github.devsideal.VectorChildFinder.vectorchildfinder.iml" filepath="$PROJECT_DIR$/.idea/modules/vectorchildfinder/com.github.devsideal.VectorChildFinder.vectorchildfinder.iml" />
     </modules>
   </component>
 </project>

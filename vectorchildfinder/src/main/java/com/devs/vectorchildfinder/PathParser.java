@@ -572,6 +572,8 @@ class PathParser {
                 }
                 previousCmd = cmd;
             }
+
+
             current[0] = currentX;
             current[1] = currentY;
             current[2] = ctrlPointX;
